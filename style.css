@@ -17,8 +17,21 @@ body {
   text-align: center;
 }
 .calc-app {
-  max-width: 540px;
-  display: grid;
-  grid-template-rows: 1fr 1fr ;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
+.calc-btns {
+  padding: 10px;
+  background-color: #242D44;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  grid-template-rows: repeat(4, 1fr); /* 4 rows */
+  gap: 10px;
+}
+.btn{
+  /* margin: 10px; */
+  background-color: #EAE3DC;
 }
