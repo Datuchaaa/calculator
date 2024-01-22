@@ -21,6 +21,50 @@ body {
   display: grid;
   gap: 24px;
 }
+h1 {
+  color: #fff;
+  font-size: 32px;
+  line-height: normal;
+  letter-spacing: -0.533px;
+}
+.theme-options {
+  align-items: center;
+  display: flex;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+.theme-option {
+  letter-spacing: 6px;
+  margin: 20px;
+}
+
+.theme-switch-btn {
+  position: relative;
+  padding: 5px;
+  border-radius: 13px;
+  background: #242d44;
+  width: 71px;
+  height: 26px;
+  flex-shrink: 0;
+}
+.oval-btn {
+  position: absolute;
+  left: 5px;
+  border: none;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  background-color: #d03f2f;
+  border-radius: 100%;
+}
+.calc-settings {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .cacl-display {
   padding: 40px;
   color: #fff;
@@ -36,6 +80,7 @@ body {
   flex-shrink: 0;
   border-radius: 10px;
   background: #181f33;
+  letter-spacing: 5px;
 }
 
 .calc-btns {
