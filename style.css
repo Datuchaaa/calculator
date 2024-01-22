@@ -36,8 +36,15 @@ h1 {
   letter-spacing: 1px;
 }
 .theme-option {
-  letter-spacing: 6px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   margin: 20px;
+}
+label {
+  padding-left: 6px;
+  letter-spacing: 6px;
+  margin-bottom: 8px;
 }
 
 .theme-switch-btn {
