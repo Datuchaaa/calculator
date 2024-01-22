@@ -1,9 +1,11 @@
 const calcDisplay = document.querySelector(".cacl-display")
 const numbersBtns = document.querySelectorAll(".num")
 const resetBtn = document.querySelector(".reset")
-const themeSwitchBtn = document.querySelector(".oval-btn")
+const themeSwitchBtn = document.querySelector(".theme-switch-btn")
+const ovalBtn = document.querySelector(".oval-btn")
 
 let currentInput = "";
+let counter = 1
 
   numbersBtns.forEach(button => {
     button.addEventListener("click", () => {
@@ -19,7 +21,17 @@ resetBtn.addEventListener("click", () => {
 })
 
 themeSwitchBtn.addEventListener("click", () => {
+
   console.log("Swith")
-  themeSwitchBtn.classList.add("oval-btn-2")
+  if ( counter === 3) {
+    counter = 0
+  }
+  if ( counter < 3 ) {
+    ovalBtn.style.transform = `translateX(${counter * 22}px)`
+    document.body.classList.add("dark")
+    counter++
+  } 
+
 })
+
 
