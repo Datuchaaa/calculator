@@ -30,6 +30,7 @@ themeSwitchBtn.addEventListener("click", () => {
     ovalBtn.style.transform = `translateX(${counter * 22}px)`
     document.body.classList.add("dark")
     counter++
+    
   } 
 
 })
