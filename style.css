@@ -199,27 +199,51 @@ label {
 }
 .lilac .cacl-display {
   background: #1e0936;
+  color: #ffe53d;
 }
 
 .lilac .calc-btns {
-  background: #1E0936;
+  background: #1e0936;
 }
 .lilac .equals-reset-btns {
-  background: #1E0936;
+  background: #1e0936;
 }
 .lilac .theme-switch-btn {
-  
+  background-color: rgba(30, 9, 54, 1);
+}
+.lilac .oval-btn {
+  background: #00ded0;
 }
 .lilac .calc-settings h1 {
-  color: rgba(54, 54, 44, 1);
+  color: #ffe53d;
 }
+
 .lilac .calc-settings span {
-  color: rgba(54, 54, 44, 1);
+  color: #ffe53d;
 }
 .lilac .calc-settings label {
-  color: rgba(54, 54, 44, 1);
+  color: #ffe53d;
 }
 .lilac .btn {
-  background: #331C4D;
-box-shadow: 0px -4px 0px 0px #881C9E inset;
+  background: #331c4d;
+  box-shadow: 0px -4px 0px 0px #881c9e inset;
+  color: #ffe53d;
+}
+.lilac .btn:active {
+  box-shadow: none;
+}
+.lilac .reset {
+  color: #fff;
+  background: #56077c;
+  box-shadow: 0px -4px 0px 0px #be15f4 inset;
+}
+.lilac .equals {
+  color: #1a2327;
+  background: #00ded0;
+  box-shadow: 0px -4px 0px 0px #6cf9f1 inset;
+}
+.lilac .delete {
+  color: #fff;
+  background: #56077c;
+  box-shadow: 0px -4px 0px 0px #be15f4 inset;
 }
