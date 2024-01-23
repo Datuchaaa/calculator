@@ -168,9 +168,9 @@ label {
   background: #378187;
   box-shadow: 0px -4px 0px 0px #1b6066 inset;
 }
-.dark .cacl-display{
-  background-color: #FFF;
-  color: rgba(54, 54, 44, 1) ;
+.dark .cacl-display {
+  background-color: #fff;
+  color: rgba(54, 54, 44, 1);
 }
 .dark .calc-btns {
   background-color: rgba(210, 205, 205, 1);
@@ -178,22 +178,48 @@ label {
 .dark .equals-reset-btns {
   background-color: rgba(210, 205, 205, 1);
 }
-.dark .theme-switch-btn{
+.dark .theme-switch-btn {
   background: rgba(210, 205, 205, 1);
 }
 .dark .calc-settings h1 {
- color: rgba(54, 54, 44, 1);
+  color: rgba(54, 54, 44, 1);
 }
 .dark .calc-settings span {
   color: rgba(54, 54, 44, 1);
- }
- .dark .calc-settings label {
+}
+.dark .calc-settings label {
   color: rgba(54, 54, 44, 1);
- }
- .dark .btn {
+}
+.dark .btn {
   color: rgba(54, 54, 44, 1);
- }
- .lilac .cacl-display{
-  background: rgba(51, 28, 77, 1);
- }
+}
 
+.lilac {
+  background: #17062a;
+}
+.lilac .cacl-display {
+  background: #1e0936;
+}
+
+.lilac .calc-btns {
+  background: #1E0936;
+}
+.lilac .equals-reset-btns {
+  background: #1E0936;
+}
+.lilac .theme-switch-btn {
+  
+}
+.lilac .calc-settings h1 {
+  color: rgba(54, 54, 44, 1);
+}
+.lilac .calc-settings span {
+  color: rgba(54, 54, 44, 1);
+}
+.lilac .calc-settings label {
+  color: rgba(54, 54, 44, 1);
+}
+.lilac .btn {
+  background: #331C4D;
+box-shadow: 0px -4px 0px 0px #881C9E inset;
+}
