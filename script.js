@@ -3,6 +3,7 @@ const numbersBtns = document.querySelectorAll(".num")
 const resetBtn = document.querySelector(".reset")
 const themeSwitchBtn = document.querySelector(".theme-switch-btn")
 const ovalBtn = document.querySelector(".oval-btn")
+const dot = document.querySelector(".dot")
 
 let currentInput = "";
 let counter = 1
@@ -19,6 +20,13 @@ resetBtn.addEventListener("click", () => {
   currentInput = "";
   console.log("Reset");
 });
+
+
+  dot.addEventListener("click", () => {
+    currentInput += dot.textContent;
+    calcDisplay.textContent = currentInput;
+  });
+
 
 themeSwitchBtn.addEventListener("click", () => {
   console.log("Switch");
