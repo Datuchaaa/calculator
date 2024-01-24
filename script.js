@@ -5,6 +5,7 @@ const themeSwitchBtn = document.querySelector(".theme-switch-btn")
 const ovalBtn = document.querySelector(".oval-btn")
 const dotBtn = document.querySelector(".dot")
 const divisionBtn = document.querySelector(".division")
+const minusBtn = document.querySelector(".minus")
 
 let currentInput = "";
 let counter = 1
@@ -30,6 +31,10 @@ dotBtn.addEventListener("click", () => {
 
   divisionBtn.addEventListener("click", () => {
     currentInput += divisionBtn.textContent;
+    calcDisplay.textContent = currentInput;
+  });
+  minusBtn.addEventListener("click", () => {
+    currentInput += minusBtn.textContent;
     calcDisplay.textContent = currentInput;
   });
 
