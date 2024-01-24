@@ -3,7 +3,8 @@ const numbersBtns = document.querySelectorAll(".num")
 const resetBtn = document.querySelector(".reset")
 const themeSwitchBtn = document.querySelector(".theme-switch-btn")
 const ovalBtn = document.querySelector(".oval-btn")
-const dot = document.querySelector(".dot")
+const dotBtn = document.querySelector(".dot")
+const divisionBtn = document.querySelector(".division")
 
 let currentInput = "";
 let counter = 1
@@ -22,8 +23,13 @@ resetBtn.addEventListener("click", () => {
 });
 
 
-  dot.addEventListener("click", () => {
-    currentInput += dot.textContent;
+dotBtn.addEventListener("click", () => {
+    currentInput += dotBtn.textContent;
+    calcDisplay.textContent = currentInput;
+  });
+
+  divisionBtn.addEventListener("click", () => {
+    currentInput += divisionBtn.textContent;
     calcDisplay.textContent = currentInput;
   });
 
