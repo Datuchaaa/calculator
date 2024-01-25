@@ -6,6 +6,7 @@ const ovalBtn = document.querySelector(".oval-btn")
 const dotBtn = document.querySelector(".dot")
 const divisionBtn = document.querySelector(".division")
 const minusBtn = document.querySelector(".minus")
+const multiplyingBtn = document.querySelector(".multiplying")
 
 let currentInput = "";
 let counter = 1
@@ -14,7 +15,6 @@ let counter = 1
     button.addEventListener("click", () => {
       currentInput += parseFloat(button.textContent);
       calcDisplay.textContent = currentInput;
-      console.log(parseFloat(button.textContent))
     });
   });
 
@@ -26,18 +26,33 @@ resetBtn.addEventListener("click", () => {
 
 
 dotBtn.addEventListener("click", () => {
+  if (!currentInput.includes('.')) {
     currentInput += dotBtn.textContent;
     calcDisplay.textContent = currentInput;
-  });
+  }
+});
 
-  divisionBtn.addEventListener("click", () => {
+divisionBtn.addEventListener("click", () => {
+  if (!currentInput.includes('/')) {
     currentInput += divisionBtn.textContent;
     calcDisplay.textContent = currentInput;
-  });
-  minusBtn.addEventListener("click", () => {
+  }
+});
+
+minusBtn.addEventListener("click", () => {
+  if (!currentInput.includes('-')) {
     currentInput += minusBtn.textContent;
     calcDisplay.textContent = currentInput;
-  });
+  }
+});
+
+multiplyingBtn.addEventListener("click", () => {
+  console.log("X")
+  if (!currentInput.includes('x')) {
+    currentInput += multiplyingBtn.textContent;
+    calcDisplay.textContent = currentInput;
+  }
+})
 
 
   // theme change logic--------------------------------------
