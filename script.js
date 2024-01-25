@@ -12,8 +12,9 @@ let counter = 1
 
   numbersBtns.forEach(button => {
     button.addEventListener("click", () => {
-      currentInput += button.textContent;
+      currentInput += parseFloat(button.textContent);
       calcDisplay.textContent = currentInput;
+      console.log(parseFloat(button.textContent))
     });
   });
 
@@ -39,6 +40,8 @@ dotBtn.addEventListener("click", () => {
   });
 
 
+  // theme change logic--------------------------------------
+
 themeSwitchBtn.addEventListener("click", () => {
   console.log("Switch");
   
@@ -59,3 +62,4 @@ themeSwitchBtn.addEventListener("click", () => {
 
   counter++;
 });
+// -----------------------------------------------------------
