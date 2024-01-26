@@ -74,7 +74,7 @@ label {
   justify-content: space-between;
   align-items: center;
 }
-.cacl-display {
+.calc-display {
   padding: 40px;
   color: #fff;
   text-align: right;
@@ -156,48 +156,48 @@ label {
   color: #fff;
 }
 
-.dark {
+.light {
   background: #e6e6e6;
 }
-.dark .reset {
+.light .reset {
   background: #378187;
   box-shadow: 0px -4px 0px 0px #1b6066 inset;
 }
-.dark .delete {
+.light .delete {
   color: #fff;
   background: #378187;
   box-shadow: 0px -4px 0px 0px #1b6066 inset;
 }
-.dark .cacl-display {
+.light .calc-display {
   background-color: #fff;
   color: rgba(54, 54, 44, 1);
 }
-.dark .calc-btns {
+.light .calc-btns {
   background-color: rgba(210, 205, 205, 1);
 }
-.dark .equals-reset-btns {
+.light .equals-reset-btns {
   background-color: rgba(210, 205, 205, 1);
 }
-.dark .theme-switch-btn {
+.light .theme-switch-btn {
   background: rgba(210, 205, 205, 1);
 }
-.dark .calc-settings h1 {
+.light .calc-settings h1 {
   color: rgba(54, 54, 44, 1);
 }
-.dark .calc-settings span {
+.light .calc-settings span {
   color: rgba(54, 54, 44, 1);
 }
-.dark .calc-settings label {
+.light .calc-settings label {
   color: rgba(54, 54, 44, 1);
 }
-.dark .btn {
+.light .btn {
   color: rgba(54, 54, 44, 1);
 }
 
 .lilac {
   background: #17062a;
 }
-.lilac .cacl-display {
+.lilac .calc-display {
   background: #1e0936;
   color: #ffe53d;
 }

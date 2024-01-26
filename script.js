@@ -1,22 +1,24 @@
-const calcDisplay = document.querySelector(".cacl-display")
-const numbersBtns = document.querySelectorAll(".num")
-const resetBtn = document.querySelector(".reset")
-const themeSwitchBtn = document.querySelector(".theme-switch-btn")
-const ovalBtn = document.querySelector(".oval-btn")
-const dotBtn = document.querySelector(".dot")
-const divisionBtn = document.querySelector(".division")
-const minusBtn = document.querySelector(".minus")
-const multiplyingBtn = document.querySelector(".multiplying")
+const calcDisplay = document.querySelector(".calc-display");
+const numbersBtns = document.querySelectorAll(".num");
+const resetBtn = document.querySelector(".reset");
+const themeSwitchBtn = document.querySelector(".theme-switch-btn");
+const ovalBtn = document.querySelector(".oval-btn");
+const dotBtn = document.querySelector(".dot");
+const divisionBtn = document.querySelector(".division");
+const minusBtn = document.querySelector(".minus");
+const multiplyingBtn = document.querySelector(".multiplying");
+const equalBtn = document.querySelector(".equals");
+const plusBtn = document.querySelector(".plus")
 
 let currentInput = "";
-let counter = 1
+let counter = 1;
 
-  numbersBtns.forEach(button => {
-    button.addEventListener("click", () => {
-      currentInput += parseFloat(button.textContent);
-      calcDisplay.textContent = currentInput;
-    });
+numbersBtns.forEach((button) => {
+  button.addEventListener("click", () => {
+    currentInput += parseFloat(button.textContent);
+    calcDisplay.textContent = currentInput;
   });
+});
 
 resetBtn.addEventListener("click", () => {
   calcDisplay.textContent = "0";
@@ -24,52 +26,64 @@ resetBtn.addEventListener("click", () => {
   console.log("Reset");
 });
 
-
 dotBtn.addEventListener("click", () => {
-  if (!currentInput.includes('.')) {
+  if (!currentInput.includes(".")) {
     currentInput += dotBtn.textContent;
     calcDisplay.textContent = currentInput;
   }
 });
 
 divisionBtn.addEventListener("click", () => {
-  if (!currentInput.includes('/')) {
+  if (!currentInput.includes("/")) {
     currentInput += divisionBtn.textContent;
     calcDisplay.textContent = currentInput;
   }
 });
 
 minusBtn.addEventListener("click", () => {
-  if (!currentInput.includes('-')) {
+  if (!currentInput.includes("-")) {
     currentInput += minusBtn.textContent;
     calcDisplay.textContent = currentInput;
   }
 });
 
 multiplyingBtn.addEventListener("click", () => {
-  console.log("X")
-  if (!currentInput.includes('x')) {
+  console.log("X");
+  if (!currentInput.includes("x")) {
     currentInput += multiplyingBtn.textContent;
+    calcDisplay.textContent = currentInput;
+  }
+});
+
+plusBtn.addEventListener("click", () => {
+  console.log("+")
+  if (!currentInput.includes("+")) {
+    currentInput += plusBtn.textContent;
     calcDisplay.textContent = currentInput;
   }
 })
 
+equalBtn.addEventListener("click", () => {
+  
+});
 
-  // theme change logic--------------------------------------
+
+
+// theme change logic--------------------------------------
 
 themeSwitchBtn.addEventListener("click", () => {
   console.log("Switch");
-  
+
   if (counter === 3) {
     counter = 0;
   }
 
   if (counter === 0) {
     ovalBtn.style.transform = `translateX(${counter * 22}px)`;
-    document.body.classList.remove("dark", "lilac");
+    document.body.classList.remove("light", "lilac");
   } else if (counter === 1) {
     ovalBtn.style.transform = `translateX(${counter * 22}px)`;
-    document.body.classList.add("dark");
+    document.body.classList.add("light");
   } else if (counter === 2) {
     ovalBtn.style.transform = `translateX(${counter * 22}px)`;
     document.body.classList.add("lilac");
