@@ -8,7 +8,7 @@ const divisionBtn = document.querySelector(".division");
 const minusBtn = document.querySelector(".minus");
 const multiplyingBtn = document.querySelector(".multiplying");
 const equalBtn = document.querySelector(".equals");
-const plusBtn = document.querySelector(".plus")
+const plusBtn = document.querySelector(".plus");
 
 let currentInput = "";
 let counter = 1;
@@ -56,30 +56,34 @@ multiplyingBtn.addEventListener("click", () => {
 });
 
 plusBtn.addEventListener("click", () => {
-  console.log("+")
+  console.log("+");
   if (!currentInput.includes("+")) {
     currentInput += plusBtn.textContent;
     calcDisplay.textContent = currentInput;
   }
-
-})
-
-equalBtn.addEventListener("click", () => {
-  console.log(currentInput)
-  let output = ""
-  if (currentInput.includes("+")) {
-    output = currentInput.split("+")
-    output = output.reduce( (a,b) => {
-      return Number(a) + Number(b)
-    },0)
-    console.log(output)
-    calcDisplay.textContent = output
-  }
-
-  
 });
 
+equalBtn.addEventListener("click", () => {
+  console.log(currentInput);
+  let output = "";
+  if (currentInput.includes("+")) {
+    output = currentInput.split("+");
+    output = output.reduce((a, b) => {
+      return Number(a) + Number(b);
+    }, 0);
+    console.log(output);
+    calcDisplay.textContent = output;
+  }
 
+  if (currentInput.includes("/")) {
+    output = currentInput.split("/");
+    output = output.reduce((a, b) => {
+      return Number(a) + Number(b);
+    }, 0);
+    console.log(output);
+    calcDisplay.textContent = output;
+  }
+});
 
 // theme change logic--------------------------------------
 
