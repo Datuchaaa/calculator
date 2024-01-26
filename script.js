@@ -61,9 +61,21 @@ plusBtn.addEventListener("click", () => {
     currentInput += plusBtn.textContent;
     calcDisplay.textContent = currentInput;
   }
+
 })
 
 equalBtn.addEventListener("click", () => {
+  console.log(currentInput)
+  let output = ""
+  if (currentInput.includes("+")) {
+    output = currentInput.split("+")
+    output = output.reduce( (a,b) => {
+      return Number(a) + Number(b)
+    },0)
+    console.log(output)
+    calcDisplay.textContent = output
+  }
+
   
 });
 
