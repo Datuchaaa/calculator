@@ -91,6 +91,7 @@ equalBtn.addEventListener("click", () => {
     });
     console.log(output);
     calcDisplay.textContent = output;
+    
   }
 
   if (currentInput.includes("x")) {
