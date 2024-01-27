@@ -91,7 +91,6 @@ equalBtn.addEventListener("click", () => {
     });
     console.log(output);
     calcDisplay.textContent = output;
-    
   }
 
   if (currentInput.includes("x")) {
@@ -99,7 +98,6 @@ equalBtn.addEventListener("click", () => {
     output = output.reduce((a, b) => {
       return Number(a) * Number(b);
     });
-    console.log(output);
     calcDisplay.textContent = output;
   }
 });
