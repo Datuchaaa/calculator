@@ -10,7 +10,7 @@ const multiplyingBtn = document.querySelector(".multiplying");
 const equalBtn = document.querySelector(".equals");
 const plusBtn = document.querySelector(".plus");
 
-let currentInput = "";
+let currentInput = [];
 let counter = 1;
 
 numbersBtns.forEach((button) => {
