@@ -70,7 +70,7 @@ equalBtn.addEventListener("click", () => {
     output = currentInput.split("+");
     output = output.reduce((a, b) => {
       return Number(a) + Number(b);
-    }, 0);
+    });
     console.log(output);
     calcDisplay.textContent = output;
   }
@@ -78,8 +78,26 @@ equalBtn.addEventListener("click", () => {
   if (currentInput.includes("/")) {
     output = currentInput.split("/");
     output = output.reduce((a, b) => {
-      return Number(a) + Number(b);
-    }, 0);
+      return Number(a) / Number(b);
+    });
+    console.log(output);
+    calcDisplay.textContent = output;
+  }
+
+  if (currentInput.includes("-")) {
+    output = currentInput.split("-");
+    output = output.reduce((a, b) => {
+      return Number(a) - Number(b);
+    });
+    console.log(output);
+    calcDisplay.textContent = output;
+  }
+
+  if (currentInput.includes("x")) {
+    output = currentInput.split("x");
+    output = output.reduce((a, b) => {
+      return Number(a) * Number(b);
+    });
     console.log(output);
     calcDisplay.textContent = output;
   }
