@@ -9,6 +9,7 @@ const minusBtn = document.querySelector(".minus");
 const multiplyingBtn = document.querySelector(".multiplying");
 const equalBtn = document.querySelector(".equals");
 const plusBtn = document.querySelector(".plus");
+const deleteBtn = document.querySelector(".delete")
 
 let currentInput = [];
 let counter = 1;
@@ -62,6 +63,13 @@ plusBtn.addEventListener("click", () => {
     calcDisplay.textContent = currentInput;
   }
 });
+
+deleteBtn.addEventListener("click", () => {
+  calcDisplay.textContent = [currentInput]
+  console.log(calcDisplay.textContent[2])
+
+
+})
 
 equalBtn.addEventListener("click", () => {
   console.log(currentInput);
