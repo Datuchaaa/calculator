@@ -11,7 +11,7 @@ const equalBtn = document.querySelector(".equals");
 const plusBtn = document.querySelector(".plus");
 const deleteBtn = document.querySelector(".delete");
 
-let currentInput = [];
+let currentInput = "";
 let counter = 1;
 
 numbersBtns.forEach((button) => {
@@ -19,6 +19,12 @@ numbersBtns.forEach((button) => {
     currentInput += parseFloat(button.textContent);
     calcDisplay.textContent = currentInput;
   });
+});
+
+deleteBtn.addEventListener("click", () => {
+  let updatedDisplay = calcDisplay.textContent.slice(0, -1);
+  calcDisplay.textContent = updatedDisplay;
+  console.log(updatedDisplay)
 });
 
 resetBtn.addEventListener("click", () => {
@@ -33,6 +39,7 @@ dotBtn.addEventListener("click", () => {
     calcDisplay.textContent = currentInput;
   }
 });
+
 
 divisionBtn.addEventListener("click", () => {
   if (!currentInput.includes("/")) {
@@ -64,10 +71,7 @@ plusBtn.addEventListener("click", () => {
   }
 });
 
-deleteBtn.addEventListener("click", () => {
-  let updatedDisplay = calcDisplay.textContent.slice(0, -1);
-  calcDisplay.textContent = updatedDisplay;
-});
+
 
 equalBtn.addEventListener("click", () => {
   console.log(currentInput);
