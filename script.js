@@ -54,6 +54,7 @@ minusBtn.addEventListener("click", () => {
   }
 });
 
+
 multiplyingBtn.addEventListener("click", () => {
   console.log("X");
   if (!currentInput.includes("x")) {
