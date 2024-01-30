@@ -24,7 +24,7 @@ numbersBtns.forEach((button) => {
 deleteBtn.addEventListener("click", () => {
   let updatedDisplay = calcDisplay.textContent.slice(0, -1);
   calcDisplay.textContent = updatedDisplay;
-  console.log(updatedDisplay)
+  console.log(updatedDisplay);
 });
 
 resetBtn.addEventListener("click", () => {
@@ -39,7 +39,6 @@ dotBtn.addEventListener("click", () => {
     calcDisplay.textContent = currentInput;
   }
 });
-
 
 divisionBtn.addEventListener("click", () => {
   if (!currentInput.includes("/")) {
@@ -70,8 +69,6 @@ plusBtn.addEventListener("click", () => {
     calcDisplay.textContent = currentInput;
   }
 });
-
-
 
 equalBtn.addEventListener("click", () => {
   console.log(currentInput);
