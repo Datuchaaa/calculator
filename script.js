@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     calcDisplay.textContent = currentInput;
   };
+  
 
   const handleNumberClick = (button) => {
     currentInput += parseFloat(button.textContent);
