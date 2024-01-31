@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
     currentInput += parseFloat(button.textContent);
     updateDisplay();
   };
+  
 
   numbersBtns.forEach((button) => {
     button.addEventListener("click", () => {
