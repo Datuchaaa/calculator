@@ -27,6 +27,8 @@ document.addEventListener("DOMContentLoaded", function () {
     currentInput += parseFloat(button.textContent);
     updateDisplay();
   };
+
+
   
 
   
