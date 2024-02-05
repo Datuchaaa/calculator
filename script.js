@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const multiplyingBtn = document.querySelector(".multiplying");
   const equalBtn = document.querySelector(".equals");
   const plusBtn = document.querySelector(".plus");
-  const deleteBtn = document.querySelector(".delete");
+  const deleteBtn = document.querySelector(".delete"); 
 
   let currentInput = "";
   let counter = 0;
