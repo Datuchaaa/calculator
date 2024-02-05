@@ -28,7 +28,6 @@ document.addEventListener("DOMContentLoaded", function () {
     updateDisplay();
   };
 
-
   numbersBtns.forEach((button) => {
     button.addEventListener("click", () => {
       handleNumberClick(button);
